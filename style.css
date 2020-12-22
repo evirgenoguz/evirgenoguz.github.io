@@ -1,0 +1,44 @@
+#textBody{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+        
+}
+
+#backgroundBody{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background: url(bg.jpeg);
+    background-size: cover;
+    background-color: #464646;
+}
+
+.socialMedia{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    
+    color: #94ecfc;
+    background: #120e07;
+
+}
+
+.socialMedia:hover{
+    opacity: 0.7;
+}
+
+h1{
+    font-size: 300%;
+}
+p {
+    font-size: 160%;
+    padding: 10px;
+}
