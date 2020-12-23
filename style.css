@@ -1,3 +1,6 @@
+*{
+    font-family: 'Cinzel', serif;
+}
 #textBody{
     text-align: center;
     position: absolute;
@@ -7,17 +10,21 @@
     color: whitesmoke;
         
 }
+.firstLetter{
+    font-size: 150%;
+}
 
 #backgroundBody{
+    background: url(bg.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background: url(bg.jpeg);
     background-size: cover;
     background-color: #464646;
 }
 
 .socialMedia{
+    box-sizing: border-box;
     padding: 20px;
     font-size: 30px;
     width: 30px;
