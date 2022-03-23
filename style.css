@@ -1,64 +1,115 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0px;
+  padding: 0px;  
+  box-sizing: border-box;
 }
 
-.name{
-  font-weight: bolder;
-  font-size: large;
+/*Navigation Bar*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5D4954;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.nav-bar{
-  text-align: left;
-  background-color: #333;
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
 
+.nav-links li {
+  list-style: none;
+}
 
-.nav-bar ul {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; 
+.nav-links a{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition:  all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links {
+    width: 50%;
   }
-  
-  .nav-bar li {
-    float: left;
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
   }
-  
-  .nav-bar li a {
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5D4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
-  
-  /* Change the link color to #111 (black) on hover */
-  .nav-bar li a:hover {
-    background-color: #111;
-  }
+}
 
-  /*Home*/
-  .home{
-    margin: 20px;
-    text-align: center;
-  }
-  .info{
-    background-color: rgba(60, 69, 60, 0.9);
-    border: 3px #333 solid;
-    padding: 20px;
-    padding-bottom: 25px;
-  }
-  .home h1{
-    color: white;
-    margin: 5px;
-  }
+.nav-active {
+  transform: translateX(0%);
+}
 
-  .home p{
-    color: white;
-    margin: 1px;
+@keyframes navLinkFade{
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
