@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    min-height: 24vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2{
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+
+.header p {
+    margin-top: 20px;
+}
+
+.home{
+    display: flex;
+    background-color: chartreuse;
+    min-height: 76vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+    min-width: 40vw;
+    height: 40vh;
+    margin: 10px;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container div {
+    background-color: aliceblue;
+    width: 40vh;
+    height: 40vw;
+    margin: 10px;
+}
