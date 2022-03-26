@@ -1,16 +1,37 @@
+/*
+colors
+
+Dark Primary Color #388E3C
+Light Primary Color #C8E6C9
+Primary Color #4CAF50
+Text / Icons #FFFFFF
+Accent Color #CDDC39
+Primary Text #212121
+Secondary Text #757575
+Divider Color #BDBDBD
+*/
+
+/*Header*/
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: #C8E6C9;
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #C8E6C9;
     min-height: 24vh;
     justify-content: center;
     align-items: center;
+
 }
 
 .header h2{
@@ -22,20 +43,23 @@
     margin-top: 20px;
 }
 
+/*Home page*/
+
 .home{
     display: flex;
-    background-color: chartreuse;
-    min-height: 76vh;
+    min-height: 64vh;
     justify-content: center;
     align-items: center;
 }
 
 .container {
     display: flex;
-    background-color: black;
+    background-color: #BDBDBD;
     min-width: 40vw;
     height: 40vh;
     margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .right-container{
@@ -44,8 +68,17 @@
 }
 
 .right-container div {
-    background-color: aliceblue;
-    width: 40vh;
-    height: 40vw;
+    background-color: #406882;
+    width: 20vw;
+    height: 40vh;
     margin: 10px;
+    border-radius: 5px;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    background-color: #C8E6C9;
+    height: 12vh;
 }
