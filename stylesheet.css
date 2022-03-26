@@ -31,7 +31,9 @@ body{
     min-height: 24vh;
     justify-content: center;
     align-items: center;
-
+    border: 1px solid #BDBDBD;
+    border-bottom: none;
+    border-radius: 10px;
 }
 
 .header h2{
@@ -50,6 +52,9 @@ body{
     min-height: 64vh;
     justify-content: center;
     align-items: center;
+    border: 1px solid #BDBDBD;
+    border-bottom: none;
+    border-radius: 10px;
 }
 
 .container {
@@ -58,8 +63,9 @@ body{
     min-width: 40vw;
     height: 40vh;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid #C8E6C9;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
 }
 
 .right-container{
@@ -72,7 +78,7 @@ body{
     width: 20vw;
     height: 40vh;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 /*Footer*/
@@ -81,4 +87,6 @@ body{
     display: flex;
     background-color: #C8E6C9;
     height: 12vh;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
 }
