@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style> 
 
-    <script src="app2.js" defer></script>
+    <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/b0ad07724e.js" crossorigin="anonymous"></script>
     <title>Oğuz Evirgen</title>
 
@@ -19,16 +19,17 @@
     <!-- Navbar -->
     <nav>
         <a href="#" class="logo">Oguz Evirgen</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="toggle" onclick="toggleMenu();">
 
         <!-- Menu -->
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
+        </div>
     </nav>
     
     <!-- Main Text And Image -->
@@ -67,9 +68,15 @@
             </div>
             <div class="about-text">
                 <h1>I'm Oguz</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum, sequi harum corporis ad, tenetur maiores voluptatum modi id consequuntur veritatis in illo a nihil debitis nisi, quas laborum iusto?</p>
+                <p>
+                    I was born in 1998 in Bodrum, <br>
+                    I am a third year Computer Engineering student at Marmara University
+                    and ı want to be a Mobile Developer. For some reason, i have no intern experience yet. <br>
+                    Also you can see my resume when click button.
+                    
+                </p>
                 <!--Button-->
-                <a href="#">Download CV</a>
+                <a href="oguzEvirgen.pdf" target="_blank">Download CV</a>
             </div>
         </div>
     </section>
@@ -88,18 +95,25 @@
     <section id="projects">
         <div class="heading">
             <h2>Projects</h2>
-            
         </div>
         <div class="project-content">
-            <div class="project-text">
-                <h1>Scramble Word App</h1>
-                <p>Try it!</p>
-                <a href="#">Code</a>
-                <a href="#">Download</a>
-            </div>
-            <div class="project-img">
-                <img src="img/personalPhoto.jpg" alt="">
-            </div>
+            
+                <div class="project-text">
+                    <h1>Cupcake App</h1>
+                    <p>
+                        I create this app for practice Android Development. <br>
+                        I didnt Download Play Store yet.
+                        In this app you have order steps <br> and after you can order cupcake 
+                        via email.
+                    </p>
+                    <a href="https://github.com/evirgenoguz/AndroidKotlinFundamentals/tree/main/android-basics-kotlin-unscramble-app-starter" target="_blank">Code</a>
+                    <a href="#">Download</a>
+                </div>
+                <div class="project-img">
+                    <img src="img/cupcakeapp.jpeg" alt="">
+                </div>
+            
+            
         </div>
     </section>
 

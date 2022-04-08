@@ -12,10 +12,13 @@
 :root {
     --main-color: #f5b041;
     --second-color: #212f3d;
+    --background-color: #F7FBFE;
 }
 
 
+
 section {
+    background-color: var(--background-color);
     padding: 100px;
 }
 
@@ -153,6 +156,9 @@ ul li a:hover {
     margin-top: 0.5rem;
 }
 
+/*About*/
+
+
 .about-content {
     display: flex;
     justify-content: space-around;
@@ -204,16 +210,29 @@ ul li a:hover {
 
 /*Services*/
 
+#services {
+    display: none;
+}
 
 
 /*Projects*/
 
 .project-content{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 2.5rem;
 }
+
+.project {
+    display: flex;
+
+    align-items: center;
+}
+
+
+
 
 .project-text h1 {
     font-size: 1.5rem;
@@ -257,6 +276,7 @@ ul li a:hover {
 }
 
 /*Contact*/
+
 
 
 .color p {
@@ -374,9 +394,52 @@ ul li a:hover {
     }
     
     .toggle.active {
+        background: url(img/menu.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
         cursor: pointer;
     }
+
+    section {
+        padding: 80px;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.8rem;
+        line-height: 4rem;
+    }
+    
+    .home-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .social {
+        left: 110px;
+    }
+
+    .about-img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .about-text {
+        width: 400px;
+    }
+
+    .about-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        line-height: 1.5rem;
+    }
+
+    .project-img {
+        width: 250px;
+        height: 300px;
+    }
+
 }
