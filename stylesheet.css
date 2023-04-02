@@ -275,6 +275,11 @@ ul li a:hover {
     object-position: center;
 }
 
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
 /*Contact*/
 
 
@@ -444,7 +449,3 @@ ul li a:hover {
 
 }
 
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-}
