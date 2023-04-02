@@ -161,7 +161,7 @@ ul li a:hover {
 
 .about-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -273,6 +273,11 @@ ul li a:hover {
     height: 100%;
     object-fit: contain;
     object-position: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
 
 /*Contact*/
@@ -443,3 +448,4 @@ ul li a:hover {
     }
 
 }
+
